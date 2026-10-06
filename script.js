@@ -37,7 +37,26 @@ const ball = {
 let playerScore = 0;
 let computerScore = 0;
 const keys = {};
+const upBtn = document.getElementById("upBtn");
+const downBtn = document.getElementById("downBtn");
 
+upBtn.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  keys.ArrowUp = true;
+});
+
+upBtn.addEventListener("touchend", () => {
+  keys.ArrowUp = false;
+});
+
+downBtn.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  keys.ArrowDown = true;
+});
+
+downBtn.addEventListener("touchend", () => {
+  keys.ArrowDown = false;
+});
 function updateScoreboard() {
   playerScoreEl.textContent = playerScore;
   computerScoreEl.textContent = computerScore;
