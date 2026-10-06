@@ -1,0 +1,13 @@
+{
+  "background_color": "#000000",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Ponggame",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Ponggame",
+  "start_url": "/",
+  "theme_color": "#FFFFFF",
+  "id": "pong-game",
+  "description": "A simple and fun Pong game."
+}
